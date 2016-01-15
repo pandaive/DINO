@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67176573-333B-4F19-8C74-3BC0711AB2C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Obsługa_biurowca</RootNamespace>
+    <AssemblyName>Obsługa_biurowca</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiurowiecDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BiurowiecDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Access.cs" />
+    <Compile Include="DB_Connection.cs" />
+    <Compile Include="Firmy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firmy.Designer.cs">
+      <DependentUpon>Firmy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firmy_dodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firmy_dodaj.Designer.cs">
+      <DependentUpon>Firmy_dodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firmy_usun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firmy_usun.Designer.cs">
+      <DependentUpon>Firmy_usun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goscie_dodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goscie_dodaj.Designer.cs">
+      <DependentUpon>Goscie_dodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goście.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goście.Designer.cs">
+      <DependentUpon>Goście.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel_dodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel_dodaj.Designer.cs">
+      <DependentUpon>Personel_dodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel_usun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel_usun.Designer.cs">
+      <DependentUpon>Personel_usun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel_zmien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel_zmien.Designer.cs">
+      <DependentUpon>Personel_zmien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pietro_dodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pietro_dodaj.Designer.cs">
+      <DependentUpon>Pietro_dodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pomieszczenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pomieszczenia.Designer.cs">
+      <DependentUpon>Pomieszczenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pomieszczenia_dodaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pomieszczenia_dodaj.Designer.cs">
+      <DependentUpon>Pomieszczenia_dodaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pomieszczenia_usun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pomieszczenia_usun.Designer.cs">
+      <DependentUpon>Pomieszczenia_usun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Firmy.resx">
+      <DependentUpon>Firmy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firmy_dodaj.resx">
+      <DependentUpon>Firmy_dodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firmy_usun.resx">
+      <DependentUpon>Firmy_usun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goscie_dodaj.resx">
+      <DependentUpon>Goscie_dodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goście.resx">
+      <DependentUpon>Goście.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel_dodaj.resx">
+      <DependentUpon>Personel_dodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel_usun.resx">
+      <DependentUpon>Personel_usun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel_zmien.resx">
+      <DependentUpon>Personel_zmien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pietro_dodaj.resx">
+      <DependentUpon>Pietro_dodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pomieszczenia.resx">
+      <DependentUpon>Pomieszczenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pomieszczenia_dodaj.resx">
+      <DependentUpon>Pomieszczenia_dodaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pomieszczenia_usun.resx">
+      <DependentUpon>Pomieszczenia_usun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="BiurowiecDataSet.xsc">
+      <DependentUpon>BiurowiecDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BiurowiecDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BiurowiecDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BiurowiecDataSet.xss">
+      <DependentUpon>BiurowiecDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Resources\WBC.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
